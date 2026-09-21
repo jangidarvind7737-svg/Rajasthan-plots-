@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rajasthan Plot — Luxury Plots & Land Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-luxury {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+  </style>
+</head>
+<body class="bg-[#faf6f0] text-[#2c1d15] antialiased selection:bg-[#d49e5d]/30 selection:text-[#38261c]">
+
+  <!-- Minimal Luxury Royal Brown Navigation Bar -->
+  <nav class="bg-[#fcf9f5]/95 backdrop-blur-md border-b border-[#e6dacb] sticky top-0 z-50 transition-all duration-300">
+    <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+
+        <!-- Logo / Brand -->
+        <a href="#home" class="flex items-center gap-3.5 group">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#8a5327] via-[#5a3619] to-[#24150b] flex items-center justify-center text-[#fcf8f2] font-bold text-sm shadow-md group-hover:scale-105 group-hover:rotate-6 transition-all duration-500">
+            RP
+          </div>
+          <div class="flex flex-col">
+            <span class="text-2xl font-normal tracking-wide text-[#2c1d15] font-luxury">
+              Rajasthan<span class="text-[#965c2a] italic font-semibold">Plot</span>
+            </span>
+            <span class="text-[9px] uppercase tracking-[0.28em] text-[#826754] font-bold">Verified Royal Estates</span>
+          </div>
+        </a>
+
+        <!-- Desktop Nav Links -->
+        <div class="hidden md:flex items-center gap-8 lg:gap-11">
+          <a href="#home" class="text-xs font-bold tracking-widest uppercase text-[#5a4233] hover:text-[#965c2a] transition-colors duration-200">
+            Home
+          </a>
+          <a href="#plots" class="text-xs font-bold tracking-widest uppercase text-[#5a4233] hover:text-[#965c2a] transition-colors duration-200">
+            Featured Plots
+          </a>
+           <a href="./about.html" class="text-xs font-bold tracking-widest uppercase text-[#5a4233] hover:text-[#965c2a] transition-colors duration-200">
+            About us 
+           </a>
+          <a href="#contact" class="px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase bg-[#38261c] hover:bg-[#8a5327] text-[#faf6f0] shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
+            Enquire Now
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden flex items-center">
+          <button id="mobile-menu-btn" type="button" class="p-2.5 rounded-xl text-[#38261c] hover:text-[#965c2a] hover:bg-[#ede3d5] focus:outline-none transition-colors">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu (Dropdown) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[#e6dacb] bg-[#fcf9f5] px-6 py-5 space-y-4 shadow-2xl">
+      <a href="#home" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Home</a>
+      <a href="#plots" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Featured Plots</a>
+      <a href="#calculator" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Appreciation</a>
+      <a href="#about" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">The Guarantee</a>
+      <a href="#contact" class="block text-center px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase bg-[#38261c] text-[#faf6f0]">Enquire Now</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section in Deep Royal Warm Brown Palette -->
+  <section id="home" class="relative overflow-hidden bg-gradient-to-b from-[#1c120c] via-[#241710] to-[#160d07] text-[#f7f2ea] min-h-[calc(100vh-5rem)] flex items-center">
+
+    <!-- Ambient Heritage Glow & Meshes -->
+    <div class="absolute inset-0 pointer-events-none">
+      <div class="absolute -top-32 -left-32 w-[580px] h-[580px] bg-[#965c2a]/25 rounded-full blur-[140px] animate-pulse-glow"></div>
+      <div class="absolute -bottom-20 right-0 w-[620px] h-[620px] bg-[#613617]/35 rounded-full blur-[150px]"></div>
+      <div class="absolute inset-0 bg-[radial-gradient(#d49e5d18_1px,transparent_1px)] [background-size:26px_26px] opacity-40"></div>
+    </div>
+
+    <!-- Main Hero Content -->
+    <div class="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+        <!-- Left Column: Editorial Headline & Search -->
+        <div class="lg:col-span-7 space-y-8 text-left">
+
+          <!-- Trust Pill with Shimmer & Float Animation -->
+          <div class="reveal-init inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-[#2c1d15]/90 border border-[#8a5327]/50 text-[#e6b986] text-xs font-semibold tracking-wider uppercase shadow-inner">
+            <span class="w-2 h-2 rounded-full bg-[#d49e5d] animate-ping"></span>
+            <span>RERA Approved • 100% Clear Title Registry</span>
+          </div>
+
+          <!-- Headline with Smooth Reveal -->
+          <div class="space-y-4">
+            <h1 class="reveal-init reveal-delay-1 text-4xl sm:text-6xl xl:text-7xl font-light font-luxury tracking-tight leading-[1.08] text-[#fbf7f0]">
+              Own Your Royal Heritage in <span class="italic font-normal text-transparent bg-clip-text bg-gradient-to-r from-[#ecd2b3] via-[#dfa76a] to-[#c77d34] animate-shimmer">Rajasthan</span>
+            </h1>
+            <p class="reveal-init reveal-delay-2 text-[#d5c3b1] text-base sm:text-lg max-w-2xl font-light leading-relaxed">
+              Curated premium residential, farmland, and commercial estates in Jaipur, Jodhpur & Udaipur. Transparent legal titles with instant registry support.
+            </p>
+          </div>
+
+          <!-- Action CTAs -->
+          <div class="reveal-init reveal-delay-3 flex flex-wrap items-center gap-4 pt-2">
+            <a href="#plots" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-[#b3733a] via-[#c98647] to-[#a3632f] text-[#1c120c] font-bold text-xs tracking-widest uppercase shadow-xl shadow-[#6e3e18]/40 hover:shadow-[#c98647]/40 hover:scale-105 transition-all duration-300">
+              <span>Explore Exclusive Plots</span>
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </a>
+
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-[#2d1e16]/90 hover:bg-[#3d2a1f] text-[#ecd8c5] border border-[#6b452c]/70 font-bold text-xs tracking-widest uppercase hover:border-[#dfa76a]/60 hover:scale-105 transition-all duration-300">
+              <svg class="w-4 h-4 text-[#dfa76a]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+              </svg>
+              <span>Schedule Drone Visit</span>
+            </a>
+          </div>
+
+          <!-- Integrated Filter & Search Bar -->
+          <div class="reveal-init reveal-delay-3 p-3 sm:p-4 rounded-2xl sm:rounded-3xl bg-[#291b13]/90 border border-[#4d3222] backdrop-blur-xl shadow-2xl">
+            <form id="hero-search-form" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+
+              <!-- Location Select -->
+              <div class="bg-[#1c120c]/80 border border-[#4d3222] rounded-xl px-4 py-2.5 text-left focus-within:border-[#dfa76a] transition-colors">
+                <label class="block text-[10px] uppercase tracking-widest text-[#a88d79] font-bold mb-0.5">Location</label>
+                <select class="w-full bg-transparent text-xs text-[#fbf7f0] font-medium focus:outline-none cursor-pointer">
+                  <option value="jaipur-ajmer" class="bg-[#241710] text-[#fbf7f0]">Jaipur — Ajmer Road</option>
+                  <option value="jaipur-jagatpura" class="bg-[#241710] text-[#fbf7f0]">Jaipur — Jagatpura</option>
+                  <option value="udaipur-lake" class="bg-[#241710] text-[#fbf7f0]">Udaipur — Lakeview Estate</option>
+                  <option value="jodhpur-bypass" class="bg-[#241710] text-[#fbf7f0]">Jodhpur — Bypass Ring Road</option>
+                </select>
+              </div>
+
+              <!-- Plot Type -->
+              <div class="bg-[#1c120c]/80 border border-[#4d3222] rounded-xl px-4 py-2.5 text-left focus-within:border-[#dfa76a] transition-colors">
+                <label class="block text-[10px] uppercase tracking-widest text-[#a88d79] font-bold mb-0.5">Plot Type</label>
+                <select class="w-full bg-transparent text-xs text-[#fbf7f0] font-medium focus:outline-none cursor-pointer">
+                  <option value="residential" class="bg-[#241710] text-[#fbf7f0]">Luxury Villa Plot (150-500 sq.yd)</option>
+                  <option value="farmhouse" class="bg-[#241710] text-[#fbf7f0]">Farmhouse / Agricultural Land</option>
+                  <option value="commercial" class="bg-[#241710] text-[#fbf7f0]">Commercial / Highway Facing</option>
+                  <option value="gated" class="bg-[#241710] text-[#fbf7f0]">Gated Township with Club</option>
+                </select>
+              </div>
+
+              <!-- Search Button -->
+              <div class="flex items-center">
+                <button type="submit" class="w-full h-full min-h-[46px] rounded-xl bg-gradient-to-r from-[#c48143] to-[#ad6d34] hover:from-[#d6904f] hover:to-[#be7b3e] text-[#1a0f08] font-bold text-xs uppercase tracking-widest flex items-center justify-center gap-2 shadow-md hover:scale-[1.02] transition-all duration-200">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                  <span>Search Land</span>
+                </button>
+              </div>
+
+            </form>
+          </div>
+
+          <!-- Trust Badges & Stats -->
+          <div class="reveal-init reveal-delay-4 grid grid-cols-3 gap-6 pt-4 border-t border-[#3d281a]">
+            <div>
+              <p class="text-2xl sm:text-3xl font-luxury font-bold text-[#dfa76a]">500+ <span class="text-sm font-sans text-[#a88d79]">Acres</span></p>
+              <p class="text-[10px] uppercase tracking-widest text-[#a88d79] mt-1">Verified Land Bank</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-luxury font-bold text-[#dfa76a]">1,200+</p>
+              <p class="text-[10px] uppercase tracking-widest text-[#a88d79] mt-1">Happy Plot Owners</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-luxury font-bold text-[#dfa76a]">0%</p>
+              <p class="text-[10px] uppercase tracking-widest text-[#a88d79] mt-1">Brokerage Hassle</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Visual Showcase & Aerial Preview Card with Smooth Float -->
+        <div class="lg:col-span-5 relative reveal-init reveal-delay-2">
+
+          <!-- Image Card Frame with Gentle Float Animation -->
+          <div class="animate-float-slow relative mx-auto rounded-3xl overflow-hidden border border-[#8a5327]/40 bg-[#241710] shadow-2xl group">
+
+            <!-- Aerial Drone Image with Slow Breathing Zoom Animation -->
+            <div class="relative aspect-4/5 sm:aspect-square lg:aspect-4/5 overflow-hidden">
+              <img
+                src="/src/assets/open-plots-construction-services.jpg"
+                alt="Aerial Drone View of Luxury Plots in Rajasthan"
+                class="animate-image-slow w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-1000 ease-out"
+                onerror="this.src='/src/assets/hero.png'"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-[#160d07] via-[#160d07]/25 to-transparent"></div>
+            </div>
+
+            <!-- Top Tag -->
+            <div class="absolute top-4 left-4 right-4 flex justify-between items-center">
+              <span class="px-3 py-1 rounded-full bg-[#241710]/90 backdrop-blur-md border border-[#6b452c] text-[#dfa76a] text-[11px] font-bold tracking-wider uppercase shadow-md">
+                Featured Royal Township
+              </span>
+              <span class="flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#1b2b17]/90 backdrop-blur-md border border-[#3f6333]/50 text-[#86d470] text-[11px] font-bold">
+                <span class="w-1.5 h-1.5 rounded-full bg-[#68c74e] animate-pulse"></span>
+                94% Booked
+              </span>
+            </div>
+
+            <!-- Bottom Floating Estate Details -->
+            <div class="absolute bottom-4 left-4 right-4 p-5 rounded-2xl bg-[#241710]/95 backdrop-blur-md border border-[#4d3222] text-left space-y-2.5 shadow-xl">
+              <div class="flex justify-between items-start">
+                <div>
+                  <h3 class="text-base font-semibold text-[#fbf7f0] font-luxury tracking-wide">The Royal Marwar Meadows</h3>
+                  <p class="text-xs text-[#a88d79]">Ajmer Highway Corridor, Jaipur</p>
+                </div>
+                <span class="text-sm font-bold text-[#dfa76a] font-luxury">₹2,850 <span class="text-[10px] text-[#a88d79] font-sans">/ sq.yd</span></span>
+              </div>
+
+              <div class="flex items-center gap-3 text-[11px] text-[#d5c3b1] pt-1 border-t border-[#3d281a]">
+                <span class="inline-flex items-center gap-1 text-[#dfa76a]">
+                  <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                  </svg>
+                  JDA Approved
+                </span>
+                <span>•</span>
+                <span>60ft Wide Road</span>
+                <span>•</span>
+                <span>Clubhouse & Parks</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Decorative Floating Accent Badge -->
+          <div class="animate-float-badge hidden sm:flex absolute -bottom-6 -left-6 items-center gap-3 px-5 py-3.5 rounded-2xl bg-[#2c1d15]/98 border border-[#8a5327]/50 shadow-2xl backdrop-blur-md">
+            <div class="w-10 h-10 rounded-xl bg-[#8a5327]/20 border border-[#8a5327]/40 flex items-center justify-center text-[#dfa76a]">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+              </svg>
+            </div>
+            <div class="text-left">
+              <p class="text-xs font-bold text-[#fbf7f0] uppercase tracking-wider">Registry Guarantee</p>
+              <p class="text-[11px] text-[#a88d79]">Instant registry assistance & clear title check</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Curated Luxury Estates & Plots Showcase in Warm Earth Palette -->
+  <section id="plots" class="py-24 bg-[#faf6f0] text-[#2c1d15] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <!-- Section Header -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6 reveal-init">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#965c2a]">Handpicked Land Bank</span>
+          <h2 class="text-3xl sm:text-5xl font-luxury font-normal text-[#241710] mt-2">
+            Featured Royal Townships & <span class="italic text-[#965c2a]">Plots</span>
+          </h2>
+          <p class="text-[#69503f] text-sm sm:text-base mt-2 max-w-xl">
+            100% government approved, clear-title plots located in the fastest appreciating corridors of Rajasthan.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="flex flex-wrap gap-2 p-1.5 bg-[#ede4d8] rounded-full text-xs font-bold self-start md:self-auto shadow-inner" id="plot-filter-tabs">
+          <button class="filter-tab active px-5 py-2.5 rounded-full bg-[#38261c] text-[#faf6f0] shadow-md transition-all duration-300" data-category="all">
+            All Properties
+          </button>
+          <button class="filter-tab px-5 py-2.5 rounded-full text-[#69503f] hover:text-[#241710] transition-all duration-300" data-category="jaipur">
+            Jaipur Corridors
+          </button>
+          <button class="filter-tab px-5 py-2.5 rounded-full text-[#69503f] hover:text-[#241710] transition-all duration-300" data-category="udaipur">
+            Udaipur Lakes
+          </button>
+          <button class="filter-tab px-5 py-2.5 rounded-full text-[#69503f] hover:text-[#241710] transition-all duration-300" data-category="farmland">
+            Luxury Farmland
+          </button>
+        </div>
+      </div>
+
+      <!-- Plots Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="plots-grid">
+
+        <!-- Plot Card 1 -->
+        <div class="plot-card reveal-init reveal-delay-1 bg-[#ffffff] rounded-3xl overflow-hidden border border-[#e6dacb] shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group" data-category="jaipur">
+          <div class="relative h-64 overflow-hidden bg-[#241710]">
+            <img
+              src="/src/assets/vikarabad-open-plots.png"
+              alt="Jaipur Royal Greens"
+              class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1c120c]/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 flex gap-2">
+              <span class="px-3 py-1 rounded-full bg-[#965c2a] text-[#faf6f0] text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                JDA & RERA
+              </span>
+              <span class="px-3 py-1 rounded-full bg-[#241710]/85 backdrop-blur-md text-[#ebd9c7] text-[10px] font-medium">
+                Ajmer Road, Jaipur
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <span class="text-xs text-[#dfa76a] font-medium">Starting from</span>
+              <p class="text-2xl font-luxury font-bold text-[#fbf7f0]">₹2,850 <span class="text-xs font-sans font-normal text-[#d5c3b1]">/ sq.yd</span></p>
+            </div>
+          </div>
+
+          <div class="p-6 space-y-4">
+            <div>
+              <h3 class="text-xl font-luxury font-semibold text-[#241710] group-hover:text-[#965c2a] transition-colors">
+                The Heritage Crown Enclave
+              </h3>
+              <p class="text-xs text-[#7d6453] mt-1">Directly on 200ft Sector Road • 10 Min from Metro</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 py-3 border-y border-[#ede4d8] text-center">
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Sizes</span>
+                <span class="text-xs font-bold text-[#241710]">150-500 yd²</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Road Width</span>
+                <span class="text-xs font-bold text-[#241710]">60 Ft Blacktop</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Possession</span>
+                <span class="text-xs font-bold text-emerald-700">Immediate</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-2">
+              <button class="open-enquiry-modal text-xs font-bold tracking-wider uppercase text-[#38261c] hover:text-[#965c2a] flex items-center gap-1.5 transition-colors" data-plot="The Heritage Crown Enclave - Jaipur">
+                <span>View Layout Map</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <button class="open-enquiry-modal px-4 py-2 rounded-full bg-[#38261c] hover:bg-[#8a5327] text-[#faf6f0] text-xs font-bold tracking-wider uppercase transition-colors" data-plot="The Heritage Crown Enclave - Jaipur">
+                Book Visit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plot Card 2 -->
+        <div class="plot-card reveal-init reveal-delay-2 bg-[#ffffff] rounded-3xl overflow-hidden border border-[#e6dacb] shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group" data-category="udaipur">
+          <div class="relative h-64 overflow-hidden bg-[#241710]">
+            <img
+              src="/src/assets/what-you-should-know-before-booking-a-plot-at-aparna-bhoomi-3-1778670474779-d6850ca4.webp"
+              alt="Udaipur Lakeview Hills"
+              class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1c120c]/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 flex gap-2">
+              <span class="px-3 py-1 rounded-full bg-[#4a7238] text-white text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                Hill & Lake View
+              </span>
+              <span class="px-3 py-1 rounded-full bg-[#241710]/85 backdrop-blur-md text-[#ebd9c7] text-[10px] font-medium">
+                Fateh Sagar Ext., Udaipur
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <span class="text-xs text-[#dfa76a] font-medium">Starting from</span>
+              <p class="text-2xl font-luxury font-bold text-[#fbf7f0]">₹4,200 <span class="text-xs font-sans font-normal text-[#d5c3b1]">/ sq.yd</span></p>
+            </div>
+          </div>
+
+          <div class="p-6 space-y-4">
+            <div>
+              <h3 class="text-xl font-luxury font-semibold text-[#241710] group-hover:text-[#965c2a] transition-colors">
+                Mewar Royal Heights & Villas
+              </h3>
+              <p class="text-xs text-[#7d6453] mt-1">Scenic Aravalli Backdrop • Gated 5-Tier Security</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 py-3 border-y border-[#ede4d8] text-center">
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Sizes</span>
+                <span class="text-xs font-bold text-[#241710]">250-1000 yd²</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Clubhouse</span>
+                <span class="text-xs font-bold text-[#241710]">15,000 sq.ft</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Registry</span>
+                <span class="text-xs font-bold text-emerald-700">Freehold</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-2">
+              <button class="open-enquiry-modal text-xs font-bold tracking-wider uppercase text-[#38261c] hover:text-[#965c2a] flex items-center gap-1.5 transition-colors" data-plot="Mewar Royal Heights - Udaipur">
+                <span>View Layout Map</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <button class="open-enquiry-modal px-4 py-2 rounded-full bg-[#38261c] hover:bg-[#8a5327] text-[#faf6f0] text-xs font-bold tracking-wider uppercase transition-colors" data-plot="Mewar Royal Heights - Udaipur">
+                Book Visit
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Plot Card 3 -->
+        <div class="plot-card reveal-init reveal-delay-3 bg-[#ffffff] rounded-3xl overflow-hidden border border-[#e6dacb] shadow-sm hover:shadow-2xl hover:-translate-y-1.5 transition-all duration-500 group" data-category="farmland">
+          <div class="relative h-64 overflow-hidden bg-[#241710]">
+            <img
+              src="/src/assets/DJI_20240401185019_0769_D-scaled.webp"
+              alt="Organic Farmhouse Estates"
+              class="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-[#1c120c]/80 via-transparent to-transparent"></div>
+            <div class="absolute top-4 left-4 flex gap-2">
+              <span class="px-3 py-1 rounded-full bg-[#824d24] text-[#faf6f0] text-[10px] font-bold uppercase tracking-wider shadow-sm">
+                Organic Farmland
+              </span>
+              <span class="px-3 py-1 rounded-full bg-[#241710]/85 backdrop-blur-md text-[#ebd9c7] text-[10px] font-medium">
+                Jaipur-Delhi Expy
+              </span>
+            </div>
+            <div class="absolute bottom-4 left-4 text-white">
+              <span class="text-xs text-[#dfa76a] font-medium">Starting from</span>
+              <p class="text-2xl font-luxury font-bold text-[#fbf7f0]">₹1,150 <span class="text-xs font-sans font-normal text-[#d5c3b1]">/ sq.yd</span></p>
+            </div>
+          </div>
+
+          <div class="p-6 space-y-4">
+            <div>
+              <h3 class="text-xl font-luxury font-semibold text-[#241710] group-hover:text-[#965c2a] transition-colors">
+                The Thar Palms Haveli Retreat
+              </h3>
+              <p class="text-xs text-[#7d6453] mt-1">1 to 5 Acre Plots • Organic Fruit Plantation & Drip</p>
+            </div>
+
+            <div class="grid grid-cols-3 gap-2 py-3 border-y border-[#ede4d8] text-center">
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Min Land</span>
+                <span class="text-xs font-bold text-[#241710]">1 Acre+</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Water Source</span>
+                <span class="text-xs font-bold text-[#241710]">24/7 Canal/Tube</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase text-[#967d6c] font-bold block">Title</span>
+                <span class="text-xs font-bold text-emerald-700">Clear Khatedari</span>
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-2">
+              <button class="open-enquiry-modal text-xs font-bold tracking-wider uppercase text-[#38261c] hover:text-[#965c2a] flex items-center gap-1.5 transition-colors" data-plot="The Thar Palms Haveli Retreat">
+                <span>View Layout Map</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+              </button>
+              <button class="open-enquiry-modal px-4 py-2 rounded-full bg-[#38261c] hover:bg-[#8a5327] text-[#faf6f0] text-xs font-bold tracking-wider uppercase transition-colors" data-plot="The Thar Palms Haveli Retreat">
+                Book Visit
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Interactive Investment & ROI Calculator in Warm Royal Brown -->
+  <section id="calculator" class="py-20 bg-[#20150e] text-[#fbf7f0] relative overflow-hidden">
+    <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#dfa76a_1px,transparent_1px)] [background-size:28px_28px]"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Left: Context -->
+        <div class="lg:col-span-5 space-y-6 text-left reveal-init">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#dfa76a]">Smart Land Estimation</span>
+          <h2 class="text-3xl sm:text-5xl font-luxury font-normal leading-tight text-[#fbf7f0]">
+            Calculate Your Land <span class="italic text-[#dfa76a]">Appreciation</span>
+          </h2>
+          <p class="text-[#d5c3b1] text-sm sm:text-base leading-relaxed font-light">
+            Real estate corridors across Jaipur and Udaipur have seen an average 18.4% annualized appreciation over the last 5 years. Calculate your estimated growth instantly.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-[#8a5327]/30 text-[#dfa76a] border border-[#8a5327]/50 flex items-center justify-center font-bold text-sm">✓</div>
+              <p class="text-xs sm:text-sm text-[#ebd9c7]">RERA and Master Plan 2031 corridor alignment</p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="w-8 h-8 rounded-full bg-[#8a5327]/30 text-[#dfa76a] border border-[#8a5327]/50 flex items-center justify-center font-bold text-sm">✓</div>
+              <p class="text-xs sm:text-sm text-[#ebd9c7]">Transparent registry costs & zero hidden documentation fees</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Calculation Widget -->
+        <div class="lg:col-span-7 bg-[#281b12]/95 p-6 sm:p-10 rounded-3xl border border-[#523724] backdrop-blur-xl shadow-2xl reveal-init reveal-delay-2">
+          <div class="space-y-6">
+
+            <!-- Plot Size Range -->
+            <div>
+              <div class="flex justify-between items-center text-xs font-semibold mb-2">
+                <span class="text-[#d5c3b1]">Plot Size (Sq. Yards)</span>
+                <span id="calc-size-val" class="text-[#dfa76a] font-bold text-sm">250 Sq. Yd</span>
+              </div>
+              <input
+                id="calc-size-slider"
+                type="range"
+                min="100"
+                max="1000"
+                step="50"
+                value="250"
+                class="w-full h-2 bg-[#3d2a1c] rounded-lg appearance-none cursor-pointer accent-[#dfa76a]"
+              />
+            </div>
+
+            <!-- Location Corridor -->
+            <div>
+              <label class="block text-xs font-bold text-[#d5c3b1] mb-2">Select Corridor Tier</label>
+              <div class="grid grid-cols-3 gap-3" id="calc-tier-buttons">
+                <button class="calc-tier-btn active p-3 rounded-xl border border-[#dfa76a]/60 bg-[#8a5327]/25 text-[#dfa76a] text-xs font-medium text-left transition-all" data-rate="2850" data-cagr="18">
+                  <span class="block font-bold">Jaipur Ring Rd</span>
+                  <span class="text-[10px] text-[#a88d79]">18% Est. CAGR</span>
+                </button>
+                <button class="calc-tier-btn p-3 rounded-xl border border-[#4d3322] bg-[#1d120a]/70 hover:border-[#6b472f] text-[#d5c3b1] text-xs font-medium text-left transition-all" data-rate="4200" data-cagr="15">
+                  <span class="block font-bold">Udaipur Foothills</span>
+                  <span class="text-[10px] text-[#a88d79]">15% Est. CAGR</span>
+                </button>
+                <button class="calc-tier-btn p-3 rounded-xl border border-[#4d3322] bg-[#1d120a]/70 hover:border-[#6b472f] text-[#d5c3b1] text-xs font-medium text-left transition-all" data-rate="1450" data-cagr="22">
+                  <span class="block font-bold">Expressway Farmland</span>
+                  <span class="text-[10px] text-[#a88d79]">22% Est. CAGR</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Dynamic Result Card -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 rounded-2xl bg-[#1a0f08]/90 border border-[#442c1c]">
+              <div>
+                <span class="text-[10px] uppercase tracking-widest text-[#a88d79] font-bold block">Initial Investment</span>
+                <p id="calc-total-initial" class="text-2xl font-luxury font-bold text-[#fbf7f0] mt-1">₹7,12,500</p>
+                <span class="text-[11px] text-[#a88d79]">@ ₹2,850/sq.yd</span>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase tracking-widest text-[#dfa76a] font-bold block">Est. 5-Year Value</span>
+                <p id="calc-total-future" class="text-2xl font-luxury font-bold text-[#dfa76a] mt-1">₹16,30,050</p>
+                <span class="text-[11px] text-[#78ce62] font-semibold">+128% Projected Return</span>
+              </div>
+            </div>
+
+            <button class="open-enquiry-modal w-full py-4 rounded-xl bg-gradient-to-r from-[#c48143] to-[#ad6d34] hover:from-[#d6904f] hover:to-[#be7b3e] text-[#1a0f08] font-bold text-xs uppercase tracking-widest hover:scale-[1.01] transition-all">
+              Request Detailed Valuation Report
+            </button>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Why Rajasthan Plot / The Royal Standard (About) -->
+  <section id="about" class="py-24 bg-[#faf6f0] text-[#2c1d15] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal-init">
+        <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#965c2a]">The Rajasthan Plot Guarantee</span>
+        <h2 class="text-3xl sm:text-5xl font-luxury font-normal text-[#241710] mt-2">
+          Designed for Trust, Built for <span class="italic text-[#965c2a]">Generations</span>
+        </h2>
+        <p class="text-[#69503f] text-sm sm:text-base mt-3">
+          We eliminate the traditional uncertainties in land ownership through verified digitization, government approvals, and institutional infrastructure.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+        <!-- Feature 1 -->
+        <div class="reveal-init reveal-delay-1 p-8 rounded-3xl bg-[#ffffff] border border-[#e6dacb] hover:border-[#965c2a] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-[#965c2a]/15 text-[#965c2a] flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-luxury font-bold text-[#241710]">100% Verified Titles</h3>
+          <p class="text-xs text-[#69503f] leading-relaxed">
+            Every square yard undergoes rigorous 30-year legal vetting by senior land advocates and full JDA / RERA authorization.
+          </p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="reveal-init reveal-delay-2 p-8 rounded-3xl bg-[#ffffff] border border-[#e6dacb] hover:border-[#965c2a] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-[#965c2a]/15 text-[#965c2a] flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+          </div>
+          <h3 class="text-lg font-luxury font-bold text-[#241710]">Drone Live Inspections</h3>
+          <p class="text-xs text-[#69503f] leading-relaxed">
+            Live 4K drone flyovers and GPS coordinate mapping so you can inspect plot boundaries and surroundings from anywhere in the world.
+          </p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="reveal-init reveal-delay-3 p-8 rounded-3xl bg-[#ffffff] border border-[#e6dacb] hover:border-[#965c2a] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-[#965c2a]/15 text-[#965c2a] flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+          </div>
+          <h3 class="text-lg font-luxury font-bold text-[#241710]">Ready Infrastructure</h3>
+          <p class="text-xs text-[#69503f] leading-relaxed">
+            Underground electrical cabling, solar streetlights, 60ft wide tar roads, landscaped parks, and high-speed water connections.
+          </p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="reveal-init reveal-delay-4 p-8 rounded-3xl bg-[#ffffff] border border-[#e6dacb] hover:border-[#965c2a] hover:shadow-xl hover:-translate-y-1 transition-all duration-300 space-y-4">
+          <div class="w-12 h-12 rounded-2xl bg-[#965c2a]/15 text-[#965c2a] flex items-center justify-center">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-luxury font-bold text-[#241710]">Direct Registry & 0% Fee</h3>
+          <p class="text-xs text-[#69503f] leading-relaxed">
+            Direct developer-to-buyer transactions. Complete assistance with sub-registrar deed execution, mutation, and bank home/plot loans.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: Client Stories & Testimonials in Warm Sand Finish -->
+  <section class="py-20 bg-[#f4ede3] border-t border-[#e6dacb] text-[#2c1d15]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4 reveal-init">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#965c2a]">Verified Royal Patrons</span>
+          <h2 class="text-3xl sm:text-5xl font-luxury font-normal text-[#241710] mt-1">
+            Voices of Our <span class="italic text-[#965c2a]">Land Owners</span>
+          </h2>
+        </div>
+        <div class="flex items-center gap-1 text-[#dfa76a]">
+          <span class="text-base">★★★★★</span>
+          <span class="text-xs font-bold text-[#5a4233] ml-2">4.9/5 from 450+ verified reviews</span>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- Review 1 -->
+        <div class="reveal-init reveal-delay-1 p-8 rounded-3xl bg-[#ffffff] border border-[#e6dacb] shadow-sm hover:shadow-lg transition-all space-y-4">
+          <div class="text-[#c98647] text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-[#69503f] italic leading-relaxed">
+            "Buying a 500 sq.yd plot on Ajmer Road through Rajasthan Plot was completely hassle-free. From drone footage verification to registry in Jaipur, everything was done in 4 days."
+          </p>
+          <div class="pt-2 border-t border-[#ede4d8] flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-[#8a5327] text-[#faf6f0] font-bold flex items-center justify-center text-sm">
+              VK
+            </div>
+            <div>
+              <p class="text-xs font-bold text-[#241710]">Vikramaditya K.</p>
+              <p class="text-[10px] text-[#8c7362]">NRI Investor (Dubai)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="reveal-init reveal-delay-2 p-8 rounded-3xl bg-[#ffffff] border border-[#e6dacb] shadow-sm hover:shadow-lg transition-all space-y-4">
+          <div class="text-[#c98647] text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-[#69503f] italic leading-relaxed">
+            "The transparency regarding JDA layout approvals and demarcation made our farmhouse purchase near Udaipur completely peaceful. Exceptional professionalism!"
+          </p>
+          <div class="pt-2 border-t border-[#ede4d8] flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-[#38261c] text-[#faf6f0] font-bold flex items-center justify-center text-sm">
+              RS
+            </div>
+            <div>
+              <p class="text-xs font-bold text-[#241710]">Dr. Rajesh Sharma</p>
+              <p class="text-[10px] text-[#8c7362]">Udaipur Estate Owner</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="reveal-init reveal-delay-3 p-8 rounded-3xl bg-[#ffffff] border border-[#e6dacb] shadow-sm hover:shadow-lg transition-all space-y-4">
+          <div class="text-[#c98647] text-sm">★★★★★</div>
+          <p class="text-xs sm:text-sm text-[#69503f] italic leading-relaxed">
+            "Zero brokerage and immediate bank loan clearance from SBI within 7 business days. Truly the most reliable land marketplace in North India."
+          </p>
+          <div class="pt-2 border-t border-[#ede4d8] flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-[#965c2a] text-[#faf6f0] font-bold flex items-center justify-center text-sm">
+              PS
+            </div>
+            <div>
+              <p class="text-xs font-bold text-[#241710]">Pooja Singh Shekhawat</p>
+              <p class="text-[10px] text-[#8c7362]">Jaipur Villa Investor</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 6: Consultation & VIP Site Visit Booking (Contact) in Deep Royal Brown -->
+  <section id="contact" class="py-24 bg-[#180f0a] text-[#fbf7f0] relative overflow-hidden">
+    <div class="absolute -bottom-36 -right-36 w-96 h-96 bg-[#965c2a]/25 rounded-full blur-[130px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+
+        <!-- Contact Context -->
+        <div class="lg:col-span-6 space-y-6 text-left reveal-init">
+          <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#dfa76a]">Exclusive Assistance</span>
+          <h2 class="text-3xl sm:text-5xl font-luxury font-normal leading-tight text-[#fbf7f0]">
+            Schedule a Private <span class="italic text-[#dfa76a]">Site Visit</span> & Consultation
+          </h2>
+          <p class="text-[#d5c3b1] text-sm sm:text-base leading-relaxed font-light">
+            Complimentary luxury cab pickup from Jaipur airport or station for site inspections. Our land advisory team will walk you through verified registry documents.
+          </p>
+
+          <div class="space-y-4 pt-4 border-t border-[#3b271a]">
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#291b13] border border-[#523724] flex items-center justify-center text-[#dfa76a]">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase tracking-wider text-[#a88d79] font-bold block">Toll-Free Consultation</span>
+                <p class="text-sm font-bold text-[#fbf7f0]">+91 (0141) 492-8800 / +91 98290-00000</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+              <div class="w-10 h-10 rounded-xl bg-[#291b13] border border-[#523724] flex items-center justify-center text-[#dfa76a]">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+              </div>
+              <div>
+                <span class="text-[10px] uppercase tracking-wider text-[#a88d79] font-bold block">Experience Centre</span>
+                <p class="text-sm font-bold text-[#fbf7f0]">Rajasthan Plot Towers, Tonk Road & C-Scheme, Jaipur</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Card -->
+        <div class="lg:col-span-6 bg-[#251810]/95 p-8 sm:p-10 rounded-3xl border border-[#523724] shadow-2xl reveal-init reveal-delay-2">
+          <form id="lead-enquiry-form" class="space-y-4">
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-[#d5c3b1] mb-1">Full Name</label>
+              <input
+                type="text"
+                required
+                placeholder="e.g. Yashvardhan Rathore"
+                class="w-full bg-[#180f0a] border border-[#4d3322] rounded-xl px-4 py-3 text-xs text-white placeholder-[#786151] focus:outline-none focus:border-[#dfa76a] transition-colors"
+              />
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-[#d5c3b1] mb-1">Phone / WhatsApp</label>
+                <input
+                  type="tel"
+                  required
+                  placeholder="+91 98765 43210"
+                  class="w-full bg-[#180f0a] border border-[#4d3322] rounded-xl px-4 py-3 text-xs text-white placeholder-[#786151] focus:outline-none focus:border-[#dfa76a] transition-colors"
+                />
+              </div>
+              <div>
+                <label class="block text-xs uppercase tracking-wider font-bold text-[#d5c3b1] mb-1">Preferred City</label>
+                <select class="w-full bg-[#180f0a] border border-[#4d3322] rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#dfa76a] transition-colors">
+                  <option value="jaipur" class="bg-[#241710]">Jaipur</option>
+                  <option value="udaipur" class="bg-[#241710]">Udaipur</option>
+                  <option value="jodhpur" class="bg-[#241710]">Jodhpur</option>
+                  <option value="expressway" class="bg-[#241710]">Delhi-Mumbai Expressway</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs uppercase tracking-wider font-bold text-[#d5c3b1] mb-1">Budget Range</label>
+              <select class="w-full bg-[#180f0a] border border-[#4d3322] rounded-xl px-4 py-3 text-xs text-white focus:outline-none focus:border-[#dfa76a] transition-colors">
+                <option value="25-50L" class="bg-[#241710]">₹25 Lakhs – ₹50 Lakhs</option>
+                <option value="50L-1Cr" class="bg-[#241710]">₹50 Lakhs – ₹1 Crore</option>
+                <option value="1Cr-3Cr" class="bg-[#241710]">₹1 Crore – ₹3 Crores</option>
+                <option value="3Cr+" class="bg-[#241710]">₹3 Crores+ (Ultra Luxury Estates)</option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full py-4 rounded-xl bg-gradient-to-r from-[#b3733a] via-[#c98647] to-[#a3632f] hover:from-[#c98647] hover:to-[#c98647] text-[#1c120c] font-bold text-xs uppercase tracking-widest transition-all duration-300 shadow-lg shadow-[#6e3e18]/40 hover:scale-[1.01]"
+            >
+              Request Call Back & Complimentary Site Visit
+            </button>
+            <p class="text-[10px] text-center text-[#8a7261]">🔒 100% Privacy Guaranteed. No spam calls.</p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Royal Brown Footer -->
+  <footer class="bg-[#140c07] text-[#a88d79] border-t border-[#3b271a] py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+
+        <div class="lg:col-span-2 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-[#8a5327] flex items-center justify-center text-[#faf6f0] font-bold text-xs">
+              RP
+            </div>
+            <span class="text-xl font-luxury text-[#fbf7f0]">Rajasthan<span class="text-[#dfa76a] italic">Plot</span></span>
+          </div>
+          <p class="text-xs text-[#a88d79] leading-relaxed max-w-sm">
+            Rajasthan’s premier curated portal for verified residential plots, luxury farmhouse lands, and commercial townships across Jaipur, Jodhpur, and Udaipur.
+          </p>
+          <p class="text-[11px] text-[#7d6657]">RERA Registration: RAJ/P/2024/8892</p>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#ebd9c7] mb-4">Locations</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#plots" class="hover:text-[#dfa76a] transition-colors">Ajmer Road, Jaipur</a></li>
+            <li><a href="#plots" class="hover:text-[#dfa76a] transition-colors">Jagatpura & Ring Road</a></li>
+            <li><a href="#plots" class="hover:text-[#dfa76a] transition-colors">Fateh Sagar Lake, Udaipur</a></li>
+            <li><a href="#plots" class="hover:text-[#dfa76a] transition-colors">Bypass Highway, Jodhpur</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#ebd9c7] mb-4">Quick Links</h4>
+          <ul class="space-y-2 text-xs">
+            <li><a href="#home" class="hover:text-[#dfa76a] transition-colors">Home</a></li>
+            <li><a href="#plots" class="hover:text-[#dfa76a] transition-colors">Verified Plots</a></li>
+            <li><a href="#calculator" class="hover:text-[#dfa76a] transition-colors">Appreciation Calculator</a></li>
+            <li><a href="#about" class="hover:text-[#dfa76a] transition-colors">The Guarantee</a></li>
+            <li><a href="#contact" class="hover:text-[#dfa76a] transition-colors">Book Inspection</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="text-xs font-bold uppercase tracking-wider text-[#ebd9c7] mb-4">Support & Trust</h4>
+          <ul class="space-y-2 text-xs">
+            <li><span class="text-[#ebd9c7] font-medium">Registry Desk:</span> +91 (0141) 492-8800</li>
+            <li><span class="text-[#ebd9c7] font-medium">Email:</span> contact@rajasthanplot.com</li>
+            <li><span class="text-[#ebd9c7] font-medium">Hours:</span> Mon - Sun (9 AM - 8 PM)</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-[#332014] flex flex-col sm:flex-row justify-between items-center gap-4 text-[11px] text-[#786151]">
+        <p>© 2026 Rajasthan Plot Marketplace Ltd. All rights reserved.</p>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-[#ebd9c7]">Privacy Policy</a>
+          <a href="#" class="hover:text-[#ebd9c7]">Terms of Registry</a>
+          <a href="#" class="hover:text-[#ebd9c7]">RERA Disclaimer</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Modal: Quick Enquiry & Site Visit -->
+  <div id="enquiry-modal" class="fixed inset-0 z-50 hidden bg-[#140c07]/85 backdrop-blur-md flex items-center justify-center p-4">
+    <div class="bg-[#241710] border border-[#523724] w-full max-w-lg rounded-3xl p-6 sm:p-8 text-[#fbf7f0] relative shadow-2xl">
+      <button id="close-enquiry-modal" class="absolute top-5 right-5 text-[#a88d79] hover:text-[#fbf7f0]">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+
+      <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-[#dfa76a] block mb-1">Direct Land Access</span>
+      <h3 class="text-2xl font-luxury font-normal text-[#fbf7f0]" id="modal-title">Book Site Inspection</h3>
+      <p class="text-xs text-[#a88d79] mt-1 mb-6">Receive layout map, RERA certificate and schedule your visit.</p>
+
+      <form id="modal-form" class="space-y-4">
+        <input type="hidden" id="modal-plot-input" value="General Inquiry">
+        <div>
+          <label class="block text-[11px] uppercase tracking-wider font-bold text-[#d5c3b1] mb-1">Your Name</label>
+          <input type="text" required placeholder="Full name" class="w-full bg-[#180f0a] border border-[#4d3322] rounded-xl px-4 py-2.5 text-xs text-white placeholder-[#786151] focus:outline-none focus:border-[#dfa76a]">
+        </div>
+        <div>
+          <label class="block text-[11px] uppercase tracking-wider font-bold text-[#d5c3b1] mb-1">Phone Number</label>
+          <input type="tel" required placeholder="+91 98765 43210" class="w-full bg-[#180f0a] border border-[#4d3322] rounded-xl px-4 py-2.5 text-xs text-white placeholder-[#786151] focus:outline-none focus:border-[#dfa76a]">
+        </div>
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-gradient-to-r from-[#b3733a] to-[#c98647] hover:from-[#c98647] hover:to-[#c98647] text-[#1c120c] font-bold text-xs uppercase tracking-widest transition-all">
+          Confirm & Download Brochure
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Interactive Toast Notification -->
+  <div id="toast-msg" class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 bg-[#281b12] border border-[#dfa76a]/60 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3">
+    <div class="w-6 h-6 rounded-full bg-[#dfa76a] text-[#1a0f08] flex items-center justify-center text-xs font-bold">✓</div>
+    <div>
+      <p class="text-xs font-bold text-white" id="toast-title">Request Received</p>
+      <p class="text-[11px] text-[#d5c3b1]" id="toast-desc">Our land advisor will contact you within 15 minutes.</p>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
