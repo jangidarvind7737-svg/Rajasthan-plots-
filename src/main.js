@@ -15,14 +15,13 @@ if ('IntersectionObserver' in window) {
     },
     {
       root: null,
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.08,
+      rootMargin: '0px 0px -30px 0px'
     }
   )
 
   revealElements.forEach(el => revealObserver.observe(el))
 } else {
-  // Fallback if IntersectionObserver not supported
   revealElements.forEach(el => el.classList.add('revealed'))
 }
 
@@ -35,7 +34,6 @@ if (mobileMenuBtn && mobileMenu) {
     mobileMenu.classList.toggle('hidden')
   })
 
-  // Close when clicking links
   mobileMenu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu.classList.add('hidden')
@@ -48,7 +46,7 @@ const toast = document.querySelector('#toast-msg')
 const toastTitle = document.querySelector('#toast-title')
 const toastDesc = document.querySelector('#toast-desc')
 
-function showToast(title, desc) {
+export function showToast(title, desc) {
   if (!toast) return
   if (title) toastTitle.textContent = title
   if (desc) toastDesc.textContent = desc
@@ -59,31 +57,38 @@ function showToast(title, desc) {
   setTimeout(() => {
     toast.classList.remove('translate-y-0', 'opacity-100')
     toast.classList.add('translate-y-24', 'opacity-0')
-  }, 4000)
+  }, 4500)
 }
 
-// 4. Property Category Filter Tabs with Warm Brown Theme
+// 4. Property Category Filter Tabs
 const filterTabs = document.querySelectorAll('.filter-tab')
 const plotCards = document.querySelectorAll('.plot-card')
 
-filterTabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-    filterTabs.forEach(t => {
+export function setCategoryFilter(category) {
+  filterTabs.forEach(t => {
+    if (t.getAttribute('data-category') === category) {
+      t.classList.add('active', 'bg-[#38261c]', 'text-[#faf6f0]', 'shadow-md')
+      t.classList.remove('text-[#69503f]')
+    } else {
       t.classList.remove('active', 'bg-[#38261c]', 'text-[#faf6f0]', 'shadow-md')
       t.classList.add('text-[#69503f]')
-    })
-    tab.classList.add('active', 'bg-[#38261c]', 'text-[#faf6f0]', 'shadow-md')
-    tab.classList.remove('text-[#69503f]')
+    }
+  })
 
+  plotCards.forEach(card => {
+    if (category === 'all' || card.getAttribute('data-category') === category) {
+      card.style.display = 'flex'
+      card.classList.add('revealed')
+    } else {
+      card.style.display = 'none'
+    }
+  })
+}
+
+filterTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
     const category = tab.getAttribute('data-category')
-    plotCards.forEach(card => {
-      if (category === 'all' || card.getAttribute('data-category') === category) {
-        card.style.display = 'block'
-        card.classList.add('revealed')
-      } else {
-        card.style.display = 'none'
-      }
-    })
+    setCategoryFilter(category)
   })
 })
 
@@ -92,6 +97,8 @@ const sizeSlider = document.querySelector('#calc-size-slider')
 const sizeVal = document.querySelector('#calc-size-val')
 const totalInitial = document.querySelector('#calc-total-initial')
 const totalFuture = document.querySelector('#calc-total-future')
+const calcRateLabel = document.querySelector('#calc-rate-label')
+const calcGrowthPct = document.querySelector('#calc-growth-pct')
 const tierButtons = document.querySelectorAll('.calc-tier-btn')
 
 let currentRate = 2850
@@ -100,14 +107,17 @@ let currentCAGR = 18
 function updateCalculator() {
   if (!sizeSlider) return
   const size = parseInt(sizeSlider.value, 10)
-  sizeVal.textContent = `${size} Sq. Yd`
+  if (sizeVal) sizeVal.textContent = `${size} Sq. Yd`
 
   const initialAmount = size * currentRate
-  // Compound Growth over 5 years
+  // Compound Growth over 5 years: A = P * (1 + r)^5
   const futureAmount = Math.round(initialAmount * Math.pow(1 + currentCAGR / 100, 5))
+  const profitPercentage = Math.round(((futureAmount - initialAmount) / initialAmount) * 100)
 
-  totalInitial.textContent = `₹${initialAmount.toLocaleString('en-IN')}`
-  totalFuture.textContent = `₹${futureAmount.toLocaleString('en-IN')}`
+  if (totalInitial) totalInitial.textContent = `₹${initialAmount.toLocaleString('en-IN')}`
+  if (totalFuture) totalFuture.textContent = `₹${futureAmount.toLocaleString('en-IN')}`
+  if (calcRateLabel) calcRateLabel.textContent = `@ ₹${currentRate.toLocaleString('en-IN')}/sq.yd`
+  if (calcGrowthPct) calcGrowthPct.textContent = `+${profitPercentage}% Projected Gain`
 }
 
 if (sizeSlider) {
@@ -117,10 +127,10 @@ if (sizeSlider) {
 tierButtons.forEach(btn => {
   btn.addEventListener('click', () => {
     tierButtons.forEach(b => {
-      b.classList.remove('active', 'border-[#dfa76a]/60', 'bg-[#8a5327]/25', 'text-[#dfa76a]')
+      b.classList.remove('active', 'border-[#dfa76a]', 'bg-[#8a5327]/30', 'text-[#dfa76a]')
       b.classList.add('border-[#4d3322]', 'bg-[#1d120a]/70', 'text-[#d5c3b1]')
     })
-    btn.classList.add('active', 'border-[#dfa76a]/60', 'bg-[#8a5327]/25', 'text-[#dfa76a]')
+    btn.classList.add('active', 'border-[#dfa76a]', 'bg-[#8a5327]/30', 'text-[#dfa76a]')
     btn.classList.remove('border-[#4d3322]', 'bg-[#1d120a]/70', 'text-[#d5c3b1]')
 
     currentRate = parseInt(btn.getAttribute('data-rate'), 10)
@@ -128,6 +138,9 @@ tierButtons.forEach(btn => {
     updateCalculator()
   })
 })
+
+// Initialize calculator display
+updateCalculator()
 
 // 6. Enquiry Modal & Form Handling
 const enquiryModal = document.querySelector('#enquiry-modal')
@@ -155,30 +168,45 @@ if (closeEnquiryModal && enquiryModal) {
   })
 }
 
-// Form submissions
+// Modal Form Submission
 const modalForm = document.querySelector('#modal-form')
 if (modalForm) {
   modalForm.addEventListener('submit', (e) => {
     e.preventDefault()
-    enquiryModal.classList.add('hidden')
+    const plot = modalPlotInput ? modalPlotInput.value : 'Land Plot'
+    if (enquiryModal) enquiryModal.classList.add('hidden')
     modalForm.reset()
-    showToast('Inspection Booked', 'Brochure & GPS layout map sent to your phone.')
+    showToast('Inspection Booked!', `GPS layout map and RERA certificate for ${plot} sent to your phone.`)
   })
 }
 
+// Main Lead Enquiry Form Submission
 const leadForm = document.querySelector('#lead-enquiry-form')
 if (leadForm) {
   leadForm.addEventListener('submit', (e) => {
     e.preventDefault()
     leadForm.reset()
-    showToast('Site Visit Scheduled', 'Our advisor will call to coordinate luxury cab pickup.')
+    showToast('Site Visit Scheduled!', 'Our senior land advisor will call within 15 minutes to confirm luxury cab pickup.')
   })
 }
 
+// 7. Hero Search Form: Filters and Smooth Scrolls to Plots Section
 const heroSearchForm = document.querySelector('#hero-search-form')
 if (heroSearchForm) {
   heroSearchForm.addEventListener('submit', (e) => {
     e.preventDefault()
+    const locationSelect = document.querySelector('#hero-location-select')
+    const typeSelect = document.querySelector('#hero-type-select')
+    
+    let targetCategory = 'all'
+    if (locationSelect && locationSelect.value !== 'all') {
+      targetCategory = locationSelect.value
+    } else if (typeSelect && typeSelect.value !== 'all') {
+      targetCategory = typeSelect.value
+    }
+
+    setCategoryFilter(targetCategory)
+
     const plotsSection = document.querySelector('#plots')
     if (plotsSection) {
       plotsSection.scrollIntoView({ behavior: 'smooth' })
