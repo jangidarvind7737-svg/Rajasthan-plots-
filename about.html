@@ -4,27 +4,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/src/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- AOS Animation Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us </title>
+    <title>About Us | RajasthanPlot - Verified Royal Estates</title>
     <style>
-    body {
-      font-family: 'Plus Jakarta Sans', sans-serif;
-    }
-    .font-luxury {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-    }
-  </style>
+      body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #fcf9f5;
+        color: #2c1d15;
+      }
+      .font-luxury {
+        font-family: 'Cormorant Garamond', Georgia, serif;
+      }
+    </style>
 </head>
 
-<body>
+<body class="bg-[#fcf9f5] text-[#2c1d15] antialiased selection:bg-[#8a5327] selection:text-[#faf6f0]">
+
+  <!-- Header Navigation -->
   <nav class="bg-[#fcf9f5]/95 backdrop-blur-md border-b border-[#e6dacb] sticky top-0 z-50 transition-all duration-300">
     <div class="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-20">
 
         <!-- Logo / Brand -->
-        <a href="#home" class="flex items-center gap-3.5 group">
+        <a href="./index.html" class="flex items-center gap-3.5 group">
           <div class="w-11 h-11 rounded-full bg-gradient-to-br from-[#8a5327] via-[#5a3619] to-[#24150b] flex items-center justify-center text-[#fcf8f2] font-bold text-sm shadow-md group-hover:scale-105 group-hover:rotate-6 transition-all duration-500">
             RP
           </div>
@@ -41,12 +49,12 @@
           <a href="./index.html" class="text-xs font-bold tracking-widest uppercase text-[#5a4233] hover:text-[#965c2a] transition-colors duration-200">
             Home
           </a>
-          <a href="#plots" class="text-xs font-bold tracking-widest uppercase text-[#5a4233] hover:text-[#965c2a] transition-colors duration-200">
-            Featured Plots
+          <a href="./our-projects.html" class="text-xs font-bold tracking-widest uppercase text-[#5a4233] hover:text-[#965c2a] transition-colors duration-200">
+            Our Projects
           </a>
-           <a href="./about.html" class="text-xs font-bold tracking-widest uppercase text-[#5a4233] hover:text-[#965c2a] transition-colors duration-200">
-            About us 
-           </a>
+          <a href="./about.html" class="text-xs font-bold tracking-widest uppercase text-[#965c2a] border-b-2 border-[#965c2a] pb-1">
+            About Us 
+          </a>
           <a href="#contact" class="px-6 py-2.5 rounded-full text-xs font-bold tracking-widest uppercase bg-[#38261c] hover:bg-[#8a5327] text-[#faf6f0] shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300">
             Enquire Now
           </a>
@@ -65,26 +73,203 @@
 
     <!-- Mobile Menu (Dropdown) -->
     <div id="mobile-menu" class="hidden md:hidden border-t border-[#e6dacb] bg-[#fcf9f5] px-6 py-5 space-y-4 shadow-2xl">
-      <a href="#home" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Home</a>
-      <a href="#plots" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Featured Plots</a>
-      <a href="#calculator" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Appreciation</a>
-      <a href="#about" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">The Guarantee</a>
+      <a href="./index.html" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Home</a>
+      <a href="./index.html#plots" class="block text-xs font-bold uppercase tracking-wider text-[#38261c] hover:text-[#965c2a]">Featured Plots</a>
+      <a href="./about.html" class="block text-xs font-bold uppercase tracking-wider text-[#965c2a]">About Us</a>
       <a href="#contact" class="block text-center px-5 py-3 rounded-full text-xs font-bold tracking-widest uppercase bg-[#38261c] text-[#faf6f0]">Enquire Now</a>
     </div>
   </nav>
-  <div class="flex flex-row bg-red-400">
-    <div class="bg-black min-h-screen flex-2">
+
+  <!-- Hero Section -->
+  <section class="relative py-24 bg-gradient-to-b from-[#f7f0e6] to-[#fcf9f5] border-b border-[#e6dacb] overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10" data-aos="fade-up" data-aos-duration="1000">
+      <span class="text-xs uppercase tracking-[0.3em] font-bold text-[#8a5327] bg-[#eee0d0] px-4 py-1.5 rounded-full inline-block mb-4">
+        Our Legacy & Vision
+      </span>
+      <h1 class="text-4xl sm:text-5xl md:text-6xl font-luxury text-[#2c1d15] mb-6 leading-tight">
+        Preserving Rajasthan’s Land Heritage, <br class="hidden md:inline" />
+        <span class="italic text-[#8a5327]">Securing Your Royalty</span>
+      </h1>
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-[#5a4233] leading-relaxed font-light">
+        We bridge centuries of rich cultural heritage with modern, transparent real estate investments—curating only JDA-approved, verified prime land plots across Jaipur and Rajasthan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Brand Story Section -->
+  <section class="py-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      
+      <!-- Left Visual Card -->
+      <div class="relative" data-aos="fade-right" data-aos-duration="1000">
+        <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border border-[#e6dacb]">
+          <img src="https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&q=80&w=1200" alt="Rajasthan Palace Estate" class="w-full h-[480px] object-cover hover:scale-105 transition-transform duration-700" />
+        </div>
+        <!-- Decorative Frame Accent -->
+        <div class="absolute -bottom-6 -right-6 w-full h-full border-2 border-[#8a5327]/30 rounded-2xl -z-0 hidden sm:block"></div>
+        
+        <!-- Experience Badge -->
+        <div class="absolute bottom-8 left-8 z-20 bg-[#2c1d15] text-[#faf6f0] p-6 rounded-xl shadow-xl border border-[#8a5327]/40" data-aos="zoom-in" data-aos-delay="300">
+          <p class="text-3xl font-luxury font-bold text-[#e6dacb]">15+ Years</p>
+          <p class="text-xs uppercase tracking-widest text-[#826754]">Of Trusted Excellence</p>
+        </div>
+      </div>
+
+      <!-- Right Content -->
+      <div class="space-y-6" data-aos="fade-left" data-aos-duration="1000">
+        <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#8a5327]">Who We Are</span>
+        <h2 class="text-3xl sm:text-4xl font-luxury text-[#2c1d15] leading-snug">
+          Where Regal Tradition Meets Complete Legal Security
+        </h2>
+        <p class="text-[#5a4233] leading-relaxed">
+          Founded with a clear purpose, <strong class="text-[#2c1d15] font-semibold">RajasthanPlot</strong> eliminates the complexity and opacity standard in traditional land acquisition. Land in Rajasthan isn’t just property—it’s an asset class rich with history, appreciation potential, and pride.
+        </p>
+        <p class="text-[#5a4233] leading-relaxed">
+          Whether you are searching for high-growth residential plots near economic corridors or tranquil luxury farmhouses, every property listed on our platform undergoes rigorous multi-tier title verification, encumbrance checks, and governmental approval validation.
+        </p>
+
+        <!-- Bullet Highlights -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
+          <div class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="100">
+            <div class="w-6 h-6 rounded-full bg-[#8a5327]/10 text-[#8a5327] flex items-center justify-center text-xs font-bold shrink-0 mt-1">✓</div>
+            <p class="text-xs text-[#38261c] font-semibold">100% Title-Clear Guarantee</p>
+          </div>
+          <div class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-6 h-6 rounded-full bg-[#8a5327]/10 text-[#8a5327] flex items-center justify-center text-xs font-bold shrink-0 mt-1">✓</div>
+            <p class="text-xs text-[#38261c] font-semibold">JDA & RERA Approved Layouts</p>
+          </div>
+          <div class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-6 h-6 rounded-full bg-[#8a5327]/10 text-[#8a5327] flex items-center justify-center text-xs font-bold shrink-0 mt-1">✓</div>
+            <p class="text-xs text-[#38261c] font-semibold">Zero Hidden Brokerage Fees</p>
+          </div>
+          <div class="flex items-start gap-3" data-aos="fade-up" data-aos-delay="400">
+            <div class="w-6 h-6 rounded-full bg-[#8a5327]/10 text-[#8a5327] flex items-center justify-center text-xs font-bold shrink-0 mt-1">✓</div>
+            <p class="text-xs text-[#38261c] font-semibold">End-to-End Legal Assistance</p>
+          </div>
+        </div>
+      </div>
 
     </div>
-    <div class="bg-red-900 h-screen flex-1">
+  </section>
 
-    </div >
-  </div>
-  <div>
-    <p class="min-h-14 bg-purple-400"></p>
-  </div>
-<div>
+  <!-- Key Statistics Banner -->
+  <section class="bg-[#2c1d15] text-[#faf6f0] py-16 border-y border-[#8a5327]/30">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div class="space-y-2" data-aos="fade-up" data-aos-delay="100">
+          <p class="text-4xl sm:text-5xl font-luxury text-[#e6dacb]">500+</p>
+          <p class="text-xs uppercase tracking-widest text-[#a88d79]">Verified Plots Sold</p>
+        </div>
+        <div class="space-y-2" data-aos="fade-up" data-aos-delay="200">
+          <p class="text-4xl sm:text-5xl font-luxury text-[#e6dacb]">₹250 Cr+</p>
+          <p class="text-xs uppercase tracking-widest text-[#a88d79]">Land Value Transacted</p>
+        </div>
+        <div class="space-y-2" data-aos="fade-up" data-aos-delay="300">
+          <p class="text-4xl sm:text-5xl font-luxury text-[#e6dacb]">100%</p>
+          <p class="text-xs uppercase tracking-widest text-[#a88d79]">Legal Verification</p>
+        </div>
+        <div class="space-y-2" data-aos="fade-up" data-aos-delay="400">
+          <p class="text-4xl sm:text-5xl font-luxury text-[#e6dacb]">4.9 ★</p>
+          <p class="text-xs uppercase tracking-widest text-[#a88d79]">Client Satisfaction</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <!-- Core Pillars / Values -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto mb-16" data-aos="fade-up">
+      <span class="text-xs uppercase tracking-[0.25em] font-bold text-[#8a5327]">Our Principles</span>
+      <h2 class="text-3xl sm:text-4xl font-luxury text-[#2c1d15] mt-2">Built On Trust & Perfection</h2>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="bg-[#fcf9f5] border border-[#e6dacb] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="100">
+        <div class="w-12 h-12 rounded-xl bg-[#8a5327]/10 text-[#8a5327] flex items-center justify-center font-bold text-lg mb-6 group-hover:bg-[#8a5327] group-hover:text-[#faf6f0] transition-colors duration-300">
+          01
+        </div>
+        <h3 class="text-xl font-luxury font-semibold text-[#2c1d15] mb-3">Absolute Transparency</h3>
+        <p class="text-xs text-[#5a4233] leading-relaxed">
+          No hidden clauses, disputed titles, or inflated pricing. We share full documentation and registry histories transparently upfront.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-[#fcf9f5] border border-[#e6dacb] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="200">
+        <div class="w-12 h-12 rounded-xl bg-[#8a5327]/10 text-[#8a5327] flex items-center justify-center font-bold text-lg mb-6 group-hover:bg-[#8a5327] group-hover:text-[#faf6f0] transition-colors duration-300">
+          02
+        </div>
+        <h3 class="text-xl font-luxury font-semibold text-[#2c1d15] mb-3">Prime Growth Locations</h3>
+        <p class="text-xs text-[#5a4233] leading-relaxed">
+          We handpick land situated strictly in high-appreciation zones, upcoming smart city corridors, and ring road expansion sectors.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-[#fcf9f5] border border-[#e6dacb] p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 group hover:-translate-y-1" data-aos="fade-up" data-aos-delay="300">
+        <div class="w-12 h-12 rounded-xl bg-[#8a5327]/10 text-[#8a5327] flex items-center justify-center font-bold text-lg mb-6 group-hover:bg-[#8a5327] group-hover:text-[#faf6f0] transition-colors duration-300">
+          03
+        </div>
+        <h3 class="text-xl font-luxury font-semibold text-[#2c1d15] mb-3">Seamless Registration</h3>
+        <p class="text-xs text-[#5a4233] leading-relaxed">
+          From initial site visits to final registry at the Sub-Registrar office, our legal advisors handle the complete paperwork process for you.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact / CTA Banner Section -->
+  <section id="contact" class="py-20 bg-gradient-to-br from-[#38261c] via-[#2c1d15] to-[#1a100a] text-[#faf6f0]">
+    <div class="max-w-5xl mx-auto px-4 text-center space-y-8" data-aos="zoom-in" data-aos-duration="1000">
+      <h2 class="text-3xl sm:text-5xl font-luxury leading-tight">
+        Ready to Own Your Piece of Royal Rajasthan?
+      </h2>
+      <p class="text-[#e6dacb] max-w-xl mx-auto text-sm sm:text-base font-light">
+        Schedule a private site visit or consult with our senior estate advisors to explore verified plots that match your budget and goals.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+        <a href="tel:+919876543210" class="px-8 py-3.5 rounded-full text-xs font-bold tracking-widest uppercase bg-[#8a5327] hover:bg-[#a36533] text-[#faf6f0] transition-all duration-300 shadow-lg hover:scale-105">
+          Call +91 98765 43210
+        </a>
+        <a href="mailto:info@rajasthanplot.com" class="px-8 py-3.5 rounded-full text-xs font-bold tracking-widest uppercase border border-[#e6dacb]/40 hover:border-[#e6dacb] text-[#faf6f0] hover:bg-[#faf6f0]/10 transition-all duration-300">
+          Send An Enquiry
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#24150b] text-[#a88d79] py-8 border-t border-[#8a5327]/20 text-xs text-center">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+      <p>© 2026 RajasthanPlot. All rights reserved.</p>
+      <div class="flex gap-6">
+        <a href="#" class="hover:text-[#e6dacb] transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-[#e6dacb] transition-colors">Terms of Service</a>
+        <a href="#" class="hover:text-[#e6dacb] transition-colors">RERA Compliance</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- AOS Library JS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Initialize AOS animations
+    AOS.init({
+      duration: 800,
+      once: true,
+      easing: 'ease-out-cubic'
+    });
+
+    // Mobile Menu Toggle Script
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
 </body>
 </html>
